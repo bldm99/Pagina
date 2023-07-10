@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+    
+.ECformulario{
+    font-family: 'Poppins', sans-serif;
+    margin:80px 0;
+    width: 50%;
+}
+
+.ECformulario .box-for{
+    background: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.box-for form {
+    
+}
+
+form .for-cantidad{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.for-cantidad .tn{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-cantidad img{
+    border-radius: 50%;
+}
+.tn span{
+    border: none;
+    background: rgb(226, 221, 221);
+    border-radius: 50%;
+    padding: 12px 18px;
+    
+}
+.ECformulario .text-pago{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+.ECformulario .metodo-pago{
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+}
+
+.metodo-pago .elpago{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+
+.elpago img{
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+    border: 3px solid #E2DDDD ;
+    cursor: pointer;
+    transition: background .5s;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+.elpago img:hover{
+    transform: scale(1.1);
+}
+
+.cuentas{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 48% 50%;
+    gap: 2%;
+}
+
+.cuentas .calc{
+    background: #E2DDDD;
+    padding: 0.6rem 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.ECformulario button {
+    margin-top: 5px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+    width: 100%;
+}
+
+.ECformulario button:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+
+
+.ECformulario h2{
+    font-size: 32px;
+    font-weight: 400;
+}

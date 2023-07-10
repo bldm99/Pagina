@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.Eapariencia {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7e7e7;
+    position: relative;
+    width: 100%;
+    font-size: calc(1rem * .9);
+
+
+}
+
+
+
+
+
+
+/*-------------Cabezera de pagina------------------------*/
+.Eapariencia .Ep-portada {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: red;
+}
+
+.Ep-portada img {
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    height: 520px;
+}
+
+
+.Eapariencia .Ep-portada .Edesc {
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    background: rgba(0, 3, 0, 0.5);
+}
+
+.Eapariencia .Ep-portada .Edesc h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1.6rem * .9);
+}
+
+.Eapariencia .Ep-portada .Edesc p {
+    letter-spacing: 1px;
+    font-size: calc(1rem * .9);
+    padding: 0;
+    margin: 0;
+}
+
+.Ep-portada .Edesc ul {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    justify-content: start;
+    padding: 10px;
+}
+
+.Ep-portada .Edesc ul li {
+    margin: 0;
+    padding: 0;
+    width: 10%;
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+.Eapariencia .cl-information{
+    background: linear-gradient(to right, #c8e31d, #e7a50b);
+    color: black;
+    padding: 8px;
+    
+}
+
+.Eapariencia .cl-information .card-information{
+    border-radius: 8px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.4);
+    /*background: linear-gradient(to right, #c8e31d, #e7a50b);*/
+
+}
+
+.card-information .all-info .info-btn{
+    display: flex;
+    gap: 2px;
+}
+ 
+.card-information .all-info{
+    width: 75%;
+}
+
+
+.card-information .all-info button {
+    background: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+    border: none;
+}
+
+.card-information .all-info button:hover {
+    background-color: rgba(245, 245, 245, 0.85);
+    cursor: pointer;
+    color: black;
+}
+
+
+
+
+
+
+
+
+.Eapariencia .Ecl-contenido {
+    padding: 10px;
+    color: black;
+}
+
+.Ecl-contenido .Econtenido-producto {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(min(250px , 100%) ,1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Ecl-contenido .Ecaja-p {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra sutil a la tarjeta */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Ecl-contenido .Ecaja-p:hover {
+    transform: translateY(-5px);
+}
+
+.Ecaja-p img {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.Ecaja-p .Ea-informacion {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Ecaja-p .Enom {
+    color: #252525;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.Ecaja-p .Enom h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    /* Establece el grosor de la fuente del encabezado h3 en 400 */
+    font-size: 18px;
+}
+
+.Ecaja-p .Enom p {
+    color: #777777;
+    /* Establece el color del texto de párrafo en #777777 */
+    font-size: 14px;
+    /* Establece el tamaño de la fuente del párrafo en 14px */
+    margin: 0;
+    padding: 0;
+    /* Elimina los márgenes superiores e inferiores del párrafo */
+    transition: color 0.3s ease;
+    /* Aplica una transición suave de color con una duración de 0.3s */
+}
+
+.Ecaja-p .Enom h4 {
+    font-weight: normal;
+}
+
+
+
+
+
+
+/*Modo tableta*/
+
+@media (max-width: 768px) {
+    .Eapariencia .Ep-portada .Edesc {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .Eapariencia .Ep-portada .Edesc {
+        width: 90%;
+    }
+
+}
