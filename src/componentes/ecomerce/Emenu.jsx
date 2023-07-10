@@ -76,7 +76,7 @@ const Emenu = () => {
 
                         <li><button onClick={() => { cerrarSesion() }}  >logout</button></li>
                         <li >
-                            <Link to="/test" style={{color:"green" , listStyle: "none" , textDecoration:"none" , fontSize:"15px"}}   >
+                            <Link to="/" style={{color:"green" , listStyle: "none" , textDecoration:"none" , fontSize:"15px"}}   >
                                 Login
                             </Link>
                         </li>
