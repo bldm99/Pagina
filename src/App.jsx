@@ -14,7 +14,6 @@ import Compra from './componentes/ecomerce/Compra/Compra'
 import Eregister from './componentes/ecomerce/Compra/Eregister'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
@@ -25,7 +24,7 @@ function App() {
         
 
         <Route path="/" element={<Eregister />} />
-        <Route path="/paginaexplorer" element={<><Ecomerce /></>} />
+        <Route path="/paginaexplorer/*" element={<><Ecomerce /></>} />
         <Route path='/paginaexplorer/:id' element={<> <Emenu /> <Compra /> </>} />
 
        
