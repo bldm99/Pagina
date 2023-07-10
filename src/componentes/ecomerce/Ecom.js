@@ -6,13 +6,14 @@ const UR = "http://localhost:3000/"
 
 const URLfinal = "https://teamapi.bladimirchipana.repl.co/"
 
+const idnesesario = "64ab919927009eb117951833"
+
+
 export const userRegister = async (_id, correo, password, pais, navigate) => {
-    const token = localStorage.getItem("tokenTeam");
-    const decodedToken = jwt_decode(token);
-    const uid = decodedToken?.uid;
+   
     try {
         const response = await axios.post(`${URLfinal}register`, {
-            _id: uid,
+            _id: idnesesario,
             correo,
             password,
             pais

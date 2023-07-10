@@ -1,4 +1,6 @@
 
+
+const idnesesario = "64ab919927009eb117951833"
 import jwt_decode from "jwt-decode";
 import axios from "axios";
 
@@ -136,14 +138,12 @@ export const postProductos = async (_id, nombre, precio, imagen, stock, f_Inicio
 
 }
 
+
 ////Bucar todos los productos del usario que esta logueado
 export const buscarProductos = async (_id, xset) => {
 
-    const token = localStorage.getItem("tokenTeam");
-    const decodedToken = jwt_decode(token);
-    const uid = decodedToken?.uid;
-
-    if (_id === uid) {
+    
+    if (_id === idnesesario) {
         try {
             const response = await axios.get(`${URLfinal}userpr`, {
                 params: {
@@ -209,7 +209,7 @@ export const postPedidos = async (_id, correo_cliente, nombre_producto, imagen_p
 
     if (!localStorage.getItem("token")) {
         console.log("No se ha iniciado sesión");
-        navigate("/test");
+        navigate("/");
         return;
     }
 

@@ -129,6 +129,8 @@
 
 /*Modo tableta*/
 
+
+
 @media (max-width: 768px) {
     .Ecl-header .Ecl-lista .Eli-s {
         display: none;
@@ -136,6 +138,9 @@
 
     .Ecl-header .Ecl-lista .Eicon-responive {
         display: block;
+       
+        
     }
+   
 
 }

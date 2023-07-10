@@ -14,7 +14,7 @@ import * as Ecom from "../Ecom"
 
 const Compra = () => {
     const navigate = useNavigate();
-    var idLogeado = "64979d173f4f94805507eb4e"
+    var idLogeado = "64ab919927009eb117951833"
 
     const buscarProducto = Datareact.buscarProducto
 
@@ -45,8 +45,8 @@ const Compra = () => {
         document.addEventListener("click", handleOutsideClick);
         const optener = async () => {
             const datmaster = Datareact.obtenerInfoTeamfy()
-            setDueñopagina(datmaster.uid)
-            const res = await buscarProducto(datmaster.uid, id, setProducto)
+            setDueñopagina(idLogeado)
+            const res = await buscarProducto(idLogeado, id, setProducto)
             const xcorreo = Ecom.obtenerInfo()
             setCorreologeado(xcorreo)
 

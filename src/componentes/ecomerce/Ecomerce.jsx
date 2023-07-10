@@ -21,7 +21,7 @@ const Ecomerce = () => {
 
     //var idLogeado = "64936e483562954d54515f92" //Locald
 
-    var idLogeado = "64979d173f4f94805507eb4e" // nube
+    var idLogeado = "64ab919927009eb117951833"
     var idpagina = "6497aa3d3f4f94805507ec55" // nube
 
     const buscarProductos = Data.buscarProductos
@@ -40,10 +40,10 @@ const Ecomerce = () => {
             try {
 
                 const x = Datareact.obtenerInfoTeamfy()
-                const resultado = await buscarProductos(x.uid, setProductos)
+                const resultado = await buscarProductos(idLogeado, setProductos)
                 //console.log(resultado)
                 //const page = await buscarPaginaReact(idLogeado, idpagina, setPagina)
-                const page = await buscarPaginaReact(x.uid, setPagina)
+                const page = await buscarPaginaReact(idLogeado, setPagina)
                 //setColor(page.color)
 
 

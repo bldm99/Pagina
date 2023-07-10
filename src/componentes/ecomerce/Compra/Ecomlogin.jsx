@@ -9,6 +9,8 @@ import * as Datareact from "../../../Datareact"
 
 const Ecomlogin = () => {
 
+
+    var idLogeado = "64ab919927009eb117951833"
     const navigate = useNavigate();
 
     const [lcorreo, setLcorreo] = useState("")
@@ -21,7 +23,7 @@ const Ecomlogin = () => {
         const obtenerdata = async () => {
             try {
                 const datmaster = Datareact.obtenerInfoTeamfy()
-                setDueñopage(datmaster.uid)
+                setDueñopage(idLogeado)
             } catch (error) {
                 console.log(error)
             }

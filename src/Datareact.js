@@ -2,6 +2,7 @@
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 
+const idnesesario = "64ab919927009eb117951833"
 //var idLogeado = "64936e483562954d54515f92"  Local
 var idLogeado = "64979d173f4f94805507eb4e"    //nube
 
@@ -13,11 +14,8 @@ const URL = 'https://teamapi-1.bladimirchipana.repl.co/'
 const URLfinal = "https://teamapi.bladimirchipana.repl.co/"
 
 export const buscarPaginaReact = async (_id ,  xset) => {
-    const token = localStorage.getItem("tokenTeam");
-    const decodedToken = jwt_decode(token);
-    const uid = decodedToken?.uid;
-   
-    if (_id === uid) {
+    
+    if (_id === idnesesario) {
         try {
             const response = await axios.get(`${URLfinal}paginaReact`, {
                 params: {
@@ -91,10 +89,8 @@ export const actualizarPaginaReact = async (_id, paginaId, titulo, banner, descr
 
 /*---------------------------------------Seccion de productos--------------------------------------- */
 export const buscarProducto = async (_id, productoId, xset) => {
-    const token = localStorage.getItem("tokenTeam");
-    const decodedToken = jwt_decode(token);
-    const uid = decodedToken?.uid;
-    if (_id === uid) {
+    
+    if (_id === idnesesario) {
         try {
             const response = await axios.get(`${URLfinal}data`, {
                 params: {

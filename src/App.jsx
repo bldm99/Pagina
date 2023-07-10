@@ -22,9 +22,9 @@ function App() {
        
 
         
-        {/*<Route path="/*" element={<><Menu /><Cuerpo /></>} />*/}
+        
 
-        <Route path="/test/*" element={<Eregister />} />
+        <Route path="/*" element={<Eregister />} />
         <Route path="/paginaexplorer/" element={<><Ecomerce /></>} />
         <Route path='/paginaexplorer/:id' element={<> <Emenu /> <Compra /> </>} />
 

@@ -12,50 +12,7 @@ import Ecomlogin from "./Ecomlogin";
 
 const Eregister = () => {
 
-    /*const idLocal = import.meta.env.VITE_idLocal;
-
-    const userRegister = Ecom.userRegister
-
-    const navigate = useNavigate();
-
-
-
-    const [correo, setCorreo] = useState("")
-    const [password, setPassword] = useState("")
-    const [pais, setPais] = useState("")
-
-
-    const [lcorreo, setLcorreo] = useState("")
-    const [lpassword, setLpassword] = useState("")
-
-    const [dueñopage , setDueñopage] = useState("")
-
-    useEffect(() => {
-        const obtenerdata = async () => {
-            try {
-                const datmaster = Datareact.obtenerInfoTeamfy()
-                setDueñopage(datmaster.uid)
-                
-                
-            } catch (error) {
-                console.log(error)
-            }
-
-        }
-        obtenerdata()
-    }, [])
-
-    const registrar = async (event) => {
-        event.preventDefault()
-        //await userRegister(idLocal, correo, password, pais, navigate)
-        await userRegister(dueñopage, correo, password, pais, navigate)
-    }
-
-
-    const logear = async (event) => {
-        event.preventDefault()
-        await Ecom.userLogin(idLocal, lcorreo, lpassword, navigate)
-    }*/
+    
 
     const [componentes, setComponetes] = useState(
         <Ecomlogin />
