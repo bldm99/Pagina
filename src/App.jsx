@@ -25,7 +25,7 @@ function App() {
         
 
         <Route path="/" element={<Eregister />} />
-        <Route path="/paginaexplorer/" element={<><Ecomerce /></>} />
+        <Route path="/paginaexplorer" element={<><Ecomerce /></>} />
         <Route path='/paginaexplorer/:id' element={<> <Emenu /> <Compra /> </>} />
 
        
